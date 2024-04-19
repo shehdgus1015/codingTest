@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coding test</title>
+</head>
+<body>
+
+<input type="file" id="fileInput">
+
+<label for="tagInput">태그:</label>
+<input type="text" id="tagInput">
+
+<label for="categoryInput">속성:</label>
+<input type="text" id="categoryInput">
+
+<button id="saveButton">저장</button>
+
+<label for="valueInput">결과:</label>
+<input type="text" id="valueInput" readonly>
+
+<div id="resultArea">
+    <table id="resultTable">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>태그</th>
+            <th>속성</th>
+            <th>결과값</th>
+        </tr>
+        </thead>
+        <tbody id="resultTableBody"></tbody>
+    </table>
+    <button id="showDBButton">DB 목록 보기</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
